@@ -1,0 +1,56 @@
+{
+  "name": "@khw1031/eslint-configs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khw1031/configs.git",
+    "directory": "packages/eslint-configs"
+  },
+  "author": {
+    "name": "Kim Hyunwoo",
+    "email": "khw1031@gmail.com",
+    "url": "https://github.com/khw1031"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-configs",
+    "eslint-flat-config",
+    "eslint-flat-configs"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "exports": {
+    "./package": "./package.json",
+    ".": {
+      "import": "./src/index.mjs"
+    },
+    "./react": {
+      "import": "./src/react.mjs"
+    },
+    "./tailwind": {
+      "import": "./src/tailwind.mjs"
+    },
+    "./next": {
+      "import": "./src/next.mjs"
+    }
+  },
+  "devDependencies": {
+    "@khw1031/prettier-configs": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:eslint-flat",
+    "globals": "catalog:eslint-flat",
+    "@eslint/js": "catalog:eslint-flat",
+    "typescript-eslint": "catalog:eslint-flat",
+    "prettier": "catalog:eslint-flat",
+    "prettier-plugin-tailwindcss": "catalog:eslint-flat",
+    "eslint-plugin-react": "catalog:eslint-flat",
+    "eslint-config-prettier": "catalog:eslint-flat",
+    "eslint-plugin-react-hooks": "catalog:eslint-flat",
+    "eslint-plugin-tailwindcss": "catalog:eslint-flat",
+    "eslint-config-next": "catalog:nextjs"
+  }
+}

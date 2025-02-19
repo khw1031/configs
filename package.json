@@ -1,0 +1,24 @@
+{
+  "name": "@khw1031/configs",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khw1031/configs.git"
+  },
+  "author": {
+    "name": "Kim Hyunwoo",
+    "email": "khw1031@gmail.com",
+    "url": "https://github.com/khw1031"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "node": ">=22.13.0",
+    "pnpm": ">=10.4.1"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.2"
+  }
+}

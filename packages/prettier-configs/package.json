@@ -1,0 +1,37 @@
+{
+  "name": "@khw1031/prettier-configs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khw1031/configs.git",
+    "directory": "packages/prettier-configs"
+  },
+  "author": {
+    "name": "Kim Hyunwoo",
+    "email": "khw1031@gmail.com",
+    "url": "https://github.com/khw1031"
+  },
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettier-configs"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "exports": {
+    "./package": "./package.json",
+    ".": {
+      "import": "./src/index.mjs"
+    },
+    "./tailwind": {
+      "import": "./src/tailwind.mjs"
+    }
+  },
+  "devDependencies": {
+    "prettier": "catalog:eslint-flat",
+    "prettier-plugin-tailwindcss": "catalog:eslint-flat"
+  }
+}
